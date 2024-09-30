@@ -1,0 +1,183 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Infant', serif;
+    line-height: 1.6;
+    background-color: #F9DFD6; /* Background color */
+    color: #4a4a4a; /* Body Text */
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em 2em; /* Reduced padding for smaller height */
+    background-color: #F9DFD6; /* Nav bar color */
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Cormorant', serif;
+    font-size: 1.2em; /* Increased font size */
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C96533; /* Peachy-orange hover */
+}
+
+.logo img {
+    width: 150px; /* Logo size remains the same */
+}
+
+/* Banner Image */
+.banner-image {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 90vh;
+    overflow: hidden;
+    margin-top: 70px; /* To account for the fixed nav */
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%); /* Black transparency filter */
+}
+
+/* Phrase on Banner Image */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-family: 'Cormorant', serif;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text span {
+    color: #C96533; /* Peachy-orange for 'Journey' */
+}
+
+/* About Section */
+.about-section {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: #F9DFD6;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1em;
+}
+
+.buttons .btn {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.5em 1.5em;
+    background-color: #C96533; /* Peachy-orange */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+/* Ambitions Section */
+.ambitions-section {
+    padding: 4em 2em;
+    background-color: #f4ece6; /* Light pink */
+    text-align: center;
+}
+
+.ambition {
+    display: inline-block;
+    width: 250px; /* Increased width for better spacing */
+    text-align: center;
+    margin: 1.5em;
+}
+
+.ambition img {
+    width: 110px; /* Slightly increased icon size */
+    height: 110px;
+    margin-bottom: 1em;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 4em 2em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+.project-card {
+    background-color: #ddd; /* Placeholder color */
+    padding: 2em;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4em 2em;
+    background-color: #333; /* Footer Background */
+    color: white;
+    text-align: center;
+}
+
+.contact-section a {
+    color: #C96533; /* Link Color */
+}
+
+/* Footer */
+footer {
+    padding: 1em 2em;
+    text-align: center;
+    background-color: #333; /* Footer Background */
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+
+    .banner-text {
+        font-size: 2em; /* Smaller text on mobile */
+    }
+}
