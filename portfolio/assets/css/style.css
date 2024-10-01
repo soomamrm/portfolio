@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 
 .logo img {
-    width: 150px; /* Logo size remains the same */
+    width: 6rem; 
 }
 
 /* Banner Image */
@@ -58,7 +58,6 @@ nav ul li a:hover {
     color: white;
     height: 90vh;
     overflow: hidden;
-    margin-top: 70px; /* To account for the fixed nav */
 }
 
 .banner-image img {
