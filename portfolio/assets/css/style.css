@@ -120,17 +120,43 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.ambition {
-    display: inline-block;
-    width: 250px; /* Increased width for better spacing */
-    text-align: center;
-    margin: 1.5em;
+.ambitions-section h2 {
+    font-size: 1.8em; /* Smaller font size */
+    font-weight: 400; /* Regular font weight (not bold) */
+    margin-bottom: 1em;
+    color: #333; /* Title color */
 }
 
-.ambition img {
-    width: 110px; /* Slightly increased icon size */
+.ambitions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 2em; /* Space between grid items */
+    justify-items: center; /* Centers the items within their grid cell */
+}
+
+.ambition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Consistent width for all items */
+    text-align: center;
+}
+
+.ambition img, .ambition svg {
+    width: 110px; /* Consistent icon size */
     height: 110px;
     margin-bottom: 1em;
+}
+
+.ambition svg {
+    stroke: #C96533; /* Peachy-orange stroke for SVG icon */
+    stroke-width: 1.5; /* Stroke thickness */
+}
+
+.ambition p {
+    font-size: 1.1em;
+    color: #4a4a4a; /* Text color */
+    line-height: 1.6;
 }
 
 /* Portfolio Section */
