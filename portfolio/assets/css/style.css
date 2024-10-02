@@ -3,17 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+ }
+ 
+ 
+ body {
     font-family: 'Cormorant Infant', serif;
     line-height: 1.6;
     background-color: #F9DFD6; /* Background color */
     color: #4a4a4a; /* Body Text */
-}
-
-/* Navbar styling */
-nav {
+ }
+ 
+ 
+ /* Navbar styling */
+ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,52 +25,60 @@ nav {
     width: 100%;
     z-index: 100;
     top: 0;
-}
-
-nav ul {
+ }
+ 
+ 
+ nav ul {
     display: flex;
     list-style: none;
-}
-
-nav ul li {
+ }
+ 
+ 
+ nav ul li {
     margin: 0 1.2em; /* Slightly reduced margin */
-}
-
-nav ul li a {
+ }
+ 
+ 
+ nav ul li a {
     color: #333;
     text-decoration: none;
     font-family: 'Cormorant', serif;
     font-size: 1.1em; /* Decreased font size */
     font-weight: 600;
     transition: color 0.3s;
-}
-
-nav ul li a:hover {
+ }
+ 
+ 
+ nav ul li a:hover {
     color: #C96533; /* Peachy-orange hover */
-}
-
-.logo img {
-    width: 6rem; 
-}
-
-/* Banner Image */
-.banner-image {
+ }
+ 
+ 
+ .logo img {
+    width: 6rem;
+ }
+ 
+ 
+ /* Banner Image */
+ .banner-image {
     position: relative;
     text-align: center;
     color: white;
     height: 90vh;
     overflow: hidden;
-}
-
-.banner-image img {
+ }
+ 
+ 
+ .banner-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(60%); /* Black transparency filter */
-}
-
-/* Phrase on Banner Image */
-.banner-text {
+ }
+ 
+ 
+ /* Phrase on Banner Image */
+ .banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,37 +87,43 @@ nav ul li a:hover {
     font-family: 'Cormorant', serif;
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.banner-text em {
+ }
+ 
+ 
+ .banner-text em {
     font-style: italic;
-}
-
-#dynamic-word {
+ }
+ 
+ 
+ #dynamic-word {
     color: #C96533; /* Peachy-orange for dynamic word */
-}
-
-/* About Section */
-.about-section {
+ }
+ 
+ 
+ /* About Section */
+ .about-section {
     padding: 4em 2em;
     text-align: center;
     background-color: #F9DFD6;
-}
-
-.about-content {
+ }
+ 
+ 
+ .about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.profile-pic {
+ }
+ 
+ 
+ .profile-pic {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin-bottom: 1em;
-}
-
-.buttons .btn {
+ }
+ 
+ 
+ .buttons .btn {
     display: inline-block;
     margin: 0.5em;
     padding: 0.5em 1.5em;
@@ -115,62 +131,100 @@ nav ul li a:hover {
     color: white;
     text-decoration: none;
     border-radius: 25px;
-}
-
-/* Ambitions Section */
-.ambitions-section {
+ }
+ 
+ 
+ /* Ambitions Section */
+ .ambitions-section {
     padding: 4em 2em;
     background-color: #f4ece6; /* Light pink */
     text-align: center;
-}
-
-.ambition {
-    display: inline-block;
-    width: 250px; /* Increased width for better spacing */
+    margin-top: -20px; /* Adjust this value to bring the section up */
+ }
+ 
+ 
+ .ambitions-section h2 {
+    font-size: 2em;
+    font-weight: 400; /* Remove bold */
+    margin-bottom: 1.5em; /* Spacing between title and content */
+ }
+ 
+ 
+ .ambitions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 2em; /* Space between grid items */
+    justify-items: center; /* Centers the items within their grid cell */
+ }
+ 
+ 
+ .ambition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Consistent width for all items */
     text-align: center;
-    margin: 1.5em;
-}
-
-.ambition img {
-    width: 110px; /* Slightly increased icon size */
+ }
+ 
+ 
+ .ambition img, .ambition svg {
+    width: 110px; /* Consistent icon size */
     height: 110px;
     margin-bottom: 1em;
-}
-
-/* Portfolio Section */
-.portfolio-section {
+ }
+ 
+ 
+ .ambition svg {
+    stroke: #C96533; /* Peachy-orange stroke for SVG icon */
+    stroke-width: 1.5; /* Stroke thickness */
+ }
+ 
+ 
+ .ambition p {
+    font-size: 1.1em;
+    color: #4a4a4a; /* Text color */
+    line-height: 1.6;
+ }
+ /* Portfolio Section */
+ .portfolio-section {
     padding: 4em 2em;
-}
-
-.projects-grid {
+ }
+ 
+ 
+ .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em; /* Gap between cards */
-}
-
-.project-card {
+ }
+ 
+ 
+ .project-card {
     background-color: #C96533; /* Peachy-orange */
     padding: 2em;
     color: white;
     text-align: center;
     border-radius: 8px;
-}
-
-/* Contact Section */
-.contact-section {
+ }
+ 
+ 
+ /* Contact Section */
+ .contact-section {
     padding: 4em 2em;
     background-color: #F9DFD6; /* Background color */
     text-align: center;
-}
-
-.contact-section a {
+ }
+ 
+ 
+ .contact-section a {
     color: #C96533; /* Peachy-orange link color */
-}
-
-/* Footer */
-footer {
+ }
+ 
+ 
+ /* Footer */
+ footer {
     text-align: center;
     padding: 1em;
     background-color: #333;
     color: white;
-}
+ }
+ 
