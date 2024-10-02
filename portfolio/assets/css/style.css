@@ -100,7 +100,7 @@
  }
  
  
- /* About Section */
+/* About Section */
 .about-section {
     padding: 4em 2em;
     text-align: center;
@@ -112,6 +112,7 @@
     grid-template-columns: 1fr 2fr; /* Two columns for image and text */
     gap: 20px; /* Space between grid items */
     align-items: center; /* Center content vertically */
+    text-align: left;
 }
 
 /* Profile Picture */
