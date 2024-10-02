@@ -101,29 +101,33 @@
  
  
  /* About Section */
- .about-section {
+.about-section {
     padding: 4em 2em;
     text-align: center;
     background-color: #F9DFD6;
- }
- 
- 
- .about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
- 
- 
- .profile-pic {
+}
+
+.about-content {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 2fr; /* Two columns for image and text */
+    gap: 20px; /* Space between grid items */
+    align-items: center; /* Center content vertically */
+}
+
+/* Profile Picture */
+.profile-pic {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 250px; /* Increased size */
+    height: 250px; /* Match height to width for a perfect circle */
     margin-bottom: 1em;
- }
- 
- 
- .buttons .btn {
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 2em; /* Space above buttons */
+}
+
+.buttons .btn {
     display: inline-block;
     margin: 0.5em;
     padding: 0.5em 1.5em;
@@ -131,7 +135,19 @@
     color: white;
     text-decoration: none;
     border-radius: 25px;
- }
+}
+
+.icons {
+    display: flex; /* Use flex to arrange icons horizontally */
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Space above the icons */
+}
+
+.icons img {
+    width: 50px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between icons */
+}
  
  
  /* Ambitions Section */
