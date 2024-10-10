@@ -9,7 +9,7 @@
  body {
     font-family: 'Cormorant Infant', serif;
     line-height: 1.6;
-    background-color: #F9DFD6; /* Background color */
+    background-color: rgb(249,223,214); /* Background color */
     color: #4a4a4a; /* Body Text */
  }
  
@@ -20,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.2em 2em; /* Reduced padding for smaller height */
-    background-color: #F9DFD6; /* Nav bar color */
+    background-color: rgb(249,223,214,0.8);/* Nav bar color */
     position: fixed;
     width: 100%;
     z-index: 100;
