@@ -79,15 +79,21 @@
  
  /* Phrase on Banner Image */
  .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
-    font-family: 'Cormorant', serif;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
- }
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 3em;
+   font-family: 'Cormorant', serif;
+   color: white; /* Color for all text */
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+   text-align: center; /* Center the text */
+   line-height: 1.2; /* Adjust line-height for better spacing */
+}
+
+#dynamic-word {
+   color: #C96533; /* Peachy-orange for dynamic word */
+}
  
  
  .banner-text em {
