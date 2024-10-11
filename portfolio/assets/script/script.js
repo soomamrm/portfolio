@@ -2,11 +2,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const words = ["JOURNEY", "ADVENTURE", "EXPERIENCE"];
     let wordIndex = 0;
     const wordElement = document.getElementById("dynamic-word");
-
+    const cursorElement = document.getElementById("cursor");
+    
     function typeWord(word) {
         let currentCharIndex = 0;
         const typingSpeed = 150; // Speed of typing effect
         const delayBetweenWords = 1500; // Delay before switching to the next word
+
+        cursorElement.style.visibility = 'visible'; // Show cursor
 
         function typeNextChar() {
             if (currentCharIndex < word.length) {
@@ -14,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 currentCharIndex++;
                 setTimeout(typeNextChar, typingSpeed);
             } else {
+                cursorElement.style.visibility = 'hidden'; // Hide cursor after typing complete
                 setTimeout(() => {
                     wordIndex = (wordIndex + 1) % words.length;
                     eraseWord();
@@ -34,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 currentCharIndex--;
                 setTimeout(eraseNextChar, erasingSpeed);
             } else {
+                cursorElement.style.visibility = 'visible'; // Show cursor again
                 typeWord(words[wordIndex]);
             }
         }

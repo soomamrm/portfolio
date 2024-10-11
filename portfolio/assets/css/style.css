@@ -98,6 +98,12 @@
     font-style: italic;
  }
  
+ #cursor {
+   display: inline-block; /* Allows positioning */
+   opacity: 1; /* Keep it visible */
+   margin-left: 5px; /* Space between the dynamic word and cursor */
+   /* Remove animation since we don’t want blinking */
+}
  
 /* About Section */
 .about-section {
