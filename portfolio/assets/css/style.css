@@ -87,23 +87,16 @@
    font-family: 'Cormorant', serif;
    color: white;
    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-   text-align: center; /* Center the text */
+   line-height: 1; /* Adjust line height to reduce space between lines */
 }
 
 #dynamic-word {
    color: #C96533; /* Peachy-orange for dynamic word */
-   white-space: nowrap; /* Prevent line break for this element */
+   margin-bottom: 0; /* Set margin to zero for tighter spacing */
+   font-style: italic; /* Italicize the word */
 }
- .banner-text em {
-    font-style: italic;
- }
- 
- #cursor {
-   display: inline-block; /* Allows positioning */
-   opacity: 1; /* Keep it visible */
-   margin-left: 5px; /* Space between the dynamic word and cursor */
-   /* Remove animation since we don’t want blinking */
-}
+
+
  
 /* About Section */
 .about-section {
