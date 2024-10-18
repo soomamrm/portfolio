@@ -220,6 +220,13 @@
     text-align: center;
     border-radius: 8px;
  }
+
+ .project-screenshot {
+   width: 100%; /* Make the image responsive */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 8px; /* Rounded corners */
+   margin-bottom: 1em; /* Space between image and text */
+}
  
  
  /* Contact Section */
