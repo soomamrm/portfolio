@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2em 2em; /* Reduced padding for smaller height */
+    padding: 0.2em 2em; 
     background-color: rgb(249,223,214,0.8);/* Nav bar color */
     position: fixed;
     width: 100%;
@@ -35,7 +35,7 @@
  
  
  nav ul li {
-    margin: 0 1.2em; /* Slightly reduced margin */
+    margin: 0 1.2em; 
  }
  
  
@@ -43,14 +43,14 @@
     color: #333;
     text-decoration: none;
     font-family: 'Cormorant', serif;
-    font-size: 1.1em; /* Decreased font size */
+    font-size: 1.1em; 
     font-weight: 600;
     transition: color 0.3s;
  }
  
  
  nav ul li a:hover {
-    color: #C96533; /* Peachy-orange hover */
+    color: #C96533;
  }
  
  
@@ -73,7 +73,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(60%); /* Black transparency filter */
+    filter: brightness(60%); 
  }
  
  
@@ -87,13 +87,13 @@
    font-family: 'Cormorant', serif;
    color: white;
    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-   line-height: 1; /* Adjust line height to reduce space between lines */
+   line-height: 1; 
 }
 
 #dynamic-word {
-   color: #C96533; /* Peachy-orange for dynamic word */
-   margin-bottom: 0; /* Set margin to zero for tighter spacing */
-   font-style: italic; /* Italicize the word */
+   color: #C96533; 
+   margin-bottom: 0; 
+   font-style: italic; 
 }
 
 
@@ -106,70 +106,70 @@
 }
 
 .about-content {
-    display: grid; /* Use grid layout */
-    grid-template-columns: 1fr 2fr; /* Two columns for image and text */
-    gap: 20px; /* Space between grid items */
-    align-items: center; /* Center content vertically */
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px; 
+    align-items: center; 
     text-align: left;
 }
 
 /* Profile Picture */
 .profile-pic {
     border-radius: 50%;
-    width: 250px; /* Increased size */
-    height: 250px; /* Match height to width for a perfect circle */
+    width: 250px; 
+    height: 250px; 
     margin-bottom: 1em;
 }
 
 /* Buttons */
 .buttons {
-    margin-top: 2em; /* Space above buttons */
+    margin-top: 2em; 
 }
 
 .buttons .btn {
     display: inline-block;
     margin: 0.5em;
     padding: 0.5em 1.5em;
-    background-color: #C96533; /* Peachy-orange */
+    background-color: #C96533; 
     color: white;
     text-decoration: none;
     border-radius: 25px;
 }
 
 .icons {
-    display: flex; /* Use flex to arrange icons horizontally */
-    justify-content: center; /* Center the icons */
-    margin-top: 20px; /* Space above the icons */
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
 }
 
 .icons img {
-    width: 50px; /* Adjust icon size */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 10px; /* Space between icons */
+    width: 50px; 
+    height: auto; 
+    margin: 0 10px; 
 }
  
  
  /* Ambitions Section */
  .ambitions-section {
     padding: 4em 2em;
-    background-color: #f4ece6; /* Light pink */
+    background-color: #f4ece6; 
     text-align: center;
-    margin-top: -20px; /* Adjust this value to bring the section up */
+    margin-top: -20px; 
  }
  
  
  .ambitions-section h2 {
     font-size: 2em;
-    font-weight: 400; /* Remove bold */
-    margin-bottom: 1.5em; /* Spacing between title and content */
+    font-weight: 400; 
+    margin-bottom: 1.5em; 
  }
  
  
  .ambitions-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 2em; /* Space between grid items */
-    justify-items: center; /* Centers the items within their grid cell */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2em; 
+    justify-items: center; 
  }
  
  
@@ -177,27 +177,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px; /* Consistent width for all items */
+    width: 250px; 
     text-align: center;
  }
  
  
  .ambition img, .ambition svg {
-    width: 110px; /* Consistent icon size */
+    width: 110px; 
     height: 110px;
     margin-bottom: 1em;
  }
  
  
  .ambition svg {
-    stroke: #C96533; /* Peachy-orange stroke for SVG icon */
-    stroke-width: 1.5; /* Stroke thickness */
+    stroke: #C96533; 
+    stroke-width: 1.5; 
  }
  
  
  .ambition p {
     font-size: 1.1em;
-    color: #4a4a4a; /* Text color */
+    color: #4a4a4a; 
     line-height: 1.6;
  }
  /* Portfolio Section */
@@ -209,12 +209,12 @@
  .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em; /* Gap between cards */
+    gap: 2em; 
  }
  
  
  .project-card {
-    background-color: #C96533; /* Peachy-orange */
+    background-color: #C96533; 
     padding: 2em;
     color: white;
     text-align: center;
@@ -222,23 +222,23 @@
  }
 
  .project-screenshot {
-   width: 100%; /* Make the image responsive */
-   height: auto; /* Maintain aspect ratio */
-   border-radius: 8px; /* Rounded corners */
-   margin-bottom: 1em; /* Space between image and text */
+   width: 100%; 
+   height: auto; 
+   border-radius: 8px; 
+   margin-bottom: 1em; 
 }
  
  
  /* Contact Section */
  .contact-section {
     padding: 4em 2em;
-    background-color: #F9DFD6; /* Background color */
+    background-color: #F9DFD6; 
     text-align: center;
  }
  
  
  .contact-section a {
-    color: #C96533; /* Peachy-orange link color */
+    color: #C96533; 
  }
  
  
