@@ -214,12 +214,12 @@
  
  
  .project-card {
-    background-color: #C96533; 
-    padding: 2em;
-    color: white;
-    text-align: center;
-    border-radius: 8px;
- }
+   background-color: rgba(201, 101, 51, 0.6); /* #C96533 with 60% transparency */
+   padding: 2em;
+   color: white;
+   text-align: center;
+   border-radius: 8px;
+}
 
  .project-screenshot {
    width: 100%; 
