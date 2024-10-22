@@ -43,3 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeWord(words[wordIndex]); // Start the effect
 });
+// Script for toggling the navbar
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active'); // Toggle the active class on nav
+});

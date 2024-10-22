@@ -249,4 +249,60 @@
     background-color: #333;
     color: white;
  }
+ /* Mobile Styles */
+@media (max-width: 768px) {
+   nav {
+       flex-direction: column; /* Stack items vertically */
+       align-items: flex-start; /* Align items to the left */
+       padding: 1em; 
+   }
+
+   nav ul {
+       flex-direction: column; /* Stack menu items vertically */
+       width: 100%; /* Make ul take full width */
+       padding: 0; /* Remove padding */
+       display: none; /* Hide the menu by default */
+   }
+
+   nav.active ul {
+       display: flex; /* Show the menu when nav is active */
+   }
+
+   nav ul li {
+       margin: 0.5em 0; /* Spacing between items */
+       width: 100%; /* Full width for each item */
+   }
+
+   .menu-toggle {
+       display: block; /* Show menu toggle button */
+       cursor: pointer;
+       padding: 0.5em 1em; 
+       background-color: #C96533; 
+       color: white; 
+       border: none;
+       border-radius: 5px; /* Rounded corners */
+   }
+}
+
+/* Hide the toggle button by default on larger screens */
+@media (min-width: 769px) {
+   .menu-toggle {
+       display: none; /* Hide toggle button on larger screens */
+   }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+   .projects-grid {
+       grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+   }
+
+   .project-card {
+       padding: 1.5em; 
+   }
+
+   .banner-text {
+       font-size: 2.5em; 
+   }
+}
  
