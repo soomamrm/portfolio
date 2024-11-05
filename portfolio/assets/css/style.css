@@ -227,16 +227,20 @@
    border-radius: 8px; 
    margin-bottom: 1em; 
 }
-/* Hover effect on project-card */
-.project-card:hover {
-   transform: scale(1.05); /* Slightly scale the card */
-   transition: transform 0.3s ease, background-color 0.3s ease;
+/* Initial style for project-screenshot with opacity and blur */
+.project-screenshot {
+   width: 100%; 
+   height: auto; 
+   border-radius: 8px; 
+   margin-bottom: 1em; 
+   opacity: 0.7; /* Initial opacity */
+   transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hover effect on project-screenshot */
+/* Hover effect to unblur, increase opacity, and slightly zoom */
 .project-card:hover .project-screenshot {
-   transform: scale(1.1); /* Slightly zoom in on the image */
-   transition: transform 0.3s ease;
+   opacity: 1; /* Increase opacity to full */
+   transform: scale(1.1); /* Slight zoom effect */
 }
  
  
