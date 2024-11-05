@@ -152,7 +152,7 @@
  /* Ambitions Section */
  .ambitions-section {
     padding: 4em 2em;
-    background-color: #f4ece6; 
+    background-color: #f9dfd5; 
     text-align: center;
     margin-top: -20px; 
  }
@@ -200,9 +200,56 @@
     color: #4a4a4a; 
     line-height: 1.6;
  }
+
+ /* Skills Section */
+.skills-section {
+   padding: 4em 2em;
+   background-color: #f4ece6; /* Matching background color with Ambitions */
+   text-align: center;
+}
+
+.skills-section h2 {
+   font-size: 2em;
+   font-weight: 400;
+   margin-bottom: 1.5em;
+}
+
+/* Skills Grid similar to Ambitions Grid */
+.skills-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* Three columns */
+   gap: 2em;
+   justify-items: center;
+}
+
+.skills {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 250px;
+   text-align: center;
+}
+
+.skills img, .skills svg {
+   width: 110px;
+   height: 110px;
+   margin-bottom: 1em;
+}
+
+.skills svg {
+   stroke: #C96533;
+   stroke-width: 1.5;
+}
+
+.skills p {
+   font-size: 1.1em;
+   color: #4a4a4a;
+   line-height: 1.6;
+}
  /* Portfolio Section */
  .portfolio-section {
     padding: 4em 2em;
+    background-color: #f4ece6; 
  }
  
  
