@@ -252,9 +252,20 @@
  /* Mobile Styles */
 @media (max-width: 768px) {
    nav {
-       flex-direction: column; /* Stack items vertically */
-       align-items: flex-start; /* Align items to the left */
+      display:block;
        padding: 1em; 
+   }
+
+   .about-content  {
+      grid-template-columns:1fr;
+   }
+
+   .ambitions-grid {
+      grid-template-columns:1fr;
+   }
+
+   .projects-grid {
+      grid-template-columns:1fr;
    }
 
    nav ul {
