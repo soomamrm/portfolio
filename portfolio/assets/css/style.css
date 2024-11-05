@@ -214,7 +214,7 @@
  
  
  .project-card {
-   background-color: rgba(201, 101, 51, 0.6); /* #C96533 with 60% transparency */
+   background-color: rgba(201, 101, 51, 0.8);; /* #C96533 with 60% transparency */
    padding: 2em;
    color: white;
    text-align: center;
@@ -229,7 +229,6 @@
 }
 /* Hover effect on project-card */
 .project-card:hover {
-   background-color: rgba(201, 101, 51, 0.8); /* Darken the background on hover */
    transform: scale(1.05); /* Slightly scale the card */
    transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -238,7 +237,6 @@
 .project-card:hover .project-screenshot {
    transform: scale(1.1); /* Slightly zoom in on the image */
    transition: transform 0.3s ease;
-   opacity: 0.9; /* Dim the image slightly */
 }
  
  
