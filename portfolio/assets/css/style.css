@@ -227,6 +227,19 @@
    border-radius: 8px; 
    margin-bottom: 1em; 
 }
+/* Hover effect on project-card */
+.project-card:hover {
+   background-color: rgba(201, 101, 51, 0.8); /* Darken the background on hover */
+   transform: scale(1.05); /* Slightly scale the card */
+   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect on project-screenshot */
+.project-card:hover .project-screenshot {
+   transform: scale(1.1); /* Slightly zoom in on the image */
+   transition: transform 0.3s ease;
+   opacity: 0.9; /* Dim the image slightly */
+}
  
  
  /* Contact Section */
