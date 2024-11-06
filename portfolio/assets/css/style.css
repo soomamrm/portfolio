@@ -291,34 +291,42 @@
    color: #4a4a4a;
    line-height: 1.6;
 }
- /* Project Section */
- .project-section {
-    padding: 4em 2em;
-    background-color: #f4ece6; 
- }
- 
- 
- .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em; 
- }
- 
- 
- .project-card {
-   background-color: rgba(201, 101, 51, 0.8);; /* #C96533 with 60% transparency */
+/* Project Section */
+.project-section {
+   padding: 4em 2em;
+   background-color: #f4ece6; 
+}
+
+/* Centering and coloring the h2 text with Cormorant font */
+.project-section h2 {
+   color: #C96533; /* Set the color */
+   text-align: center; /* Center the text */
+   font-family: 'Cormorant', serif; /* Apply Cormorant font */
+   font-size: 2.5rem; /* Optional: Adjust the font size */
+   margin-bottom: 1.5em; /* Optional: Space below the header */
+}
+
+.projects-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2em; 
+}
+
+.project-card {
+   background-color: rgba(201, 101, 51, 0.8); /* #C96533 with 60% transparency */
    padding: 2em;
    color: white;
    text-align: center;
    border-radius: 8px;
 }
 
- .project-screenshot {
-   width: 100%; 
-   height: auto; 
-   border-radius: 8px; 
-   margin-bottom: 1em; 
+.project-screenshot {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+   margin-bottom: 1em;
 }
+
 /* Initial style for project-screenshot with opacity and blur */
 .project-screenshot {
    width: 100%; 
@@ -334,6 +342,7 @@
    opacity: 1; /* Increase opacity to full */
    transform: scale(1.1); /* Slight zoom effect */
 }
+
  
  
  /* Contact Section */
