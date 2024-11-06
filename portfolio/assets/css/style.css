@@ -309,55 +309,116 @@
 /* Project Section */
 .project-section {
    padding: 4em 2em;
-   background-color: #f4ece6; 
+   background-color: #f4ece6;
+   text-align: center;
 }
 
-/* Centering and coloring the h2 text with Cormorant font */
 .project-section h2 {
    color: #C96533;
-   text-align: center;
    font-family: 'Cormorant', serif;
    font-size: 2.5rem;
    margin-bottom: 1.5em;
 }
 
-.projects-grid {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 1.5em; /* Reduced gap for a tighter layout */
+/* Carousel container styles */
+.carousel-container {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   width: calc(100% - 2em); /* Adjust to show only 3 cards */
+   margin: 0 auto;
 }
 
+/* Carousel (scrollable area) */
+.carousel {
+   display: flex;
+   gap: 1.5em; /* Adjusted gap between cards */
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   padding: 1em 0;
+   width: calc(100% * 3); /* Ensures 3 cards are shown */
+   -ms-overflow-style: none;  /* Hide scrollbar in IE */
+   scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+   display: none;  /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+}
+
+/* Project Card Styles */
 .project-card {
-   background-color: rgba(201, 101, 51, 0.9); /* Less transparency for a richer color */
-   padding: 1.5em; /* Reduced padding for a slimmer appearance */
+   min-width: 280px; /* Larger width for the cards */
+   max-width: 320px; /* Larger max width for the cards */
+   background-color: #C96533; /* Updated background color */
+   padding: 1em;
    color: white;
    text-align: center;
-   border-radius: 6px; /* Smaller border-radius for a sleek look */
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   border-radius: 8px;
+   transition: transform 0.3s;
+   text-decoration: none; /* Remove link highlighting */
+}
+
+.project-card h3 {
+   color: white;
+   font-size: 1.4rem; /* Slightly larger text size */
 }
 
 .project-card:hover {
-   transform: translateY(-5px); /* Slight lift on hover */
-   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+   transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .project-screenshot {
    width: 100%;
    height: auto;
-   border-radius: 4px; /* Reduced border-radius for a cleaner look */
-   margin-bottom: 0.75em;
-   opacity: 0.85; /* Slightly higher opacity for initial view */
-   transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+   border-radius: 8px;
+   margin-bottom: 0.5em;
 }
 
-/* Hover effect for project-screenshot */
-.project-card:hover .project-screenshot {
-   opacity: 1; /* Full opacity on hover */
-   transform: scale(1.05); /* Subtle zoom */
+/* Button styles for carousel */
+.carousel-button {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: #F9DFD6; /* Light color to contrast the buttons */
+   color: #C96533; /* Button color to match the theme */
+   border: none;
+   font-size: 2rem;
+   cursor: pointer;
+   padding: 0.8em 1em;
+   border-radius: 50%;
+   z-index: 2;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for visibility */
 }
 
- 
+.left-button {
+   left: -30px;
+}
+
+.right-button {
+   right: -30px;
+}
+
+/* Button hover effect */
+.carousel-button:hover {
+   background-color: #C96533;
+   color: white;
+}
+/* Ensure no underline for links or text in the carousel */
+.carousel .project-card a {
+   text-decoration: none; /* Removes underline */
+   color: white; /* Keeps the text color white if needed */
+}
+
+/* Add any other styles to make sure the text appears as you want without underlines */
+.carousel .project-card h3 {
+   color: white;
+   font-size: 1.4rem;
+   font-weight: bold;
+   margin-top: 1.5em;
+}
+
  
  /* Contact Section */
  .contact-section {

@@ -1,3 +1,4 @@
+// Typewriter effect for words
 document.addEventListener("DOMContentLoaded", function() {
     const words = ["JOURNEY", "ADVENTURE", "EXPERIENCE"];
     let wordIndex = 0;
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeWord(words[wordIndex]); // Start the effect
 });
+
 // Script for toggling the navbar
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
@@ -50,3 +52,19 @@ const nav = document.querySelector('nav');
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('active'); // Toggle the active class on nav
 });
+
+// Carousel functionality with faster scroll speed
+document.addEventListener("DOMContentLoaded", function() {
+    const carousel = document.querySelector('.carousel');
+    const leftButton = document.querySelector('.left-button');
+    const rightButton = document.querySelector('.right-button');
+
+    leftButton.addEventListener('click', () => {
+        carousel.scrollBy({ left: -400, behavior: 'smooth' }); // Increased speed for smoother transition
+    });
+
+    rightButton.addEventListener('click', () => {
+        carousel.scrollBy({ left: 400, behavior: 'smooth' }); // Increased speed for smoother transition
+    });
+});
+
