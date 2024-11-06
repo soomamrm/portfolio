@@ -314,48 +314,47 @@
 
 /* Centering and coloring the h2 text with Cormorant font */
 .project-section h2 {
-   color: #C96533; /* Set the color */
-   text-align: center; /* Center the text */
-   font-family: 'Cormorant', serif; /* Apply Cormorant font */
-   font-size: 2.5rem; /* Optional: Adjust the font size */
-   margin-bottom: 1.5em; /* Optional: Space below the header */
+   color: #C96533;
+   text-align: center;
+   font-family: 'Cormorant', serif;
+   font-size: 2.5rem;
+   margin-bottom: 1.5em;
 }
 
 .projects-grid {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap: 2em; 
+   gap: 1.5em; /* Reduced gap for a tighter layout */
 }
 
 .project-card {
-   background-color: rgba(201, 101, 51, 0.8); /* #C96533 with 60% transparency */
-   padding: 2em;
+   background-color: rgba(201, 101, 51, 0.9); /* Less transparency for a richer color */
+   padding: 1.5em; /* Reduced padding for a slimmer appearance */
    color: white;
    text-align: center;
-   border-radius: 8px;
+   border-radius: 6px; /* Smaller border-radius for a sleek look */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+   transform: translateY(-5px); /* Slight lift on hover */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .project-screenshot {
    width: 100%;
    height: auto;
-   border-radius: 8px;
-   margin-bottom: 1em;
-}
-
-/* Initial style for project-screenshot with opacity and blur */
-.project-screenshot {
-   width: 100%; 
-   height: auto; 
-   border-radius: 8px; 
-   margin-bottom: 1em; 
-   opacity: 0.7; /* Initial opacity */
+   border-radius: 4px; /* Reduced border-radius for a cleaner look */
+   margin-bottom: 0.75em;
+   opacity: 0.85; /* Slightly higher opacity for initial view */
    transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hover effect to unblur, increase opacity, and slightly zoom */
+/* Hover effect for project-screenshot */
 .project-card:hover .project-screenshot {
-   opacity: 1; /* Increase opacity to full */
-   transform: scale(1.1); /* Slight zoom effect */
+   opacity: 1; /* Full opacity on hover */
+   transform: scale(1.05); /* Subtle zoom */
 }
 
  
