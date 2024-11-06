@@ -205,8 +205,9 @@
  
  .ambitions-section h2 {
     font-size: 2em;
-    font-weight: 400; 
+    font-weight: bold; 
     margin-bottom: 1.5em; 
+    color:#C96533
  }
  
  
@@ -255,8 +256,9 @@
 
 .skills-section h2 {
    font-size: 2em;
-   font-weight: 400;
+   font-weight: bold;
    margin-bottom: 1.5em;
+   color:#C96533
 }
 
 .skills-grid {
@@ -289,8 +291,8 @@
    color: #4a4a4a;
    line-height: 1.6;
 }
- /* Portfolio Section */
- .portfolio-section {
+ /* Project Section */
+ .project-section {
     padding: 4em 2em;
     background-color: #f4ece6; 
  }
