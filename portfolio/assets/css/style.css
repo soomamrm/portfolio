@@ -157,28 +157,30 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   text-align: center; /* Centers the icon and button */
+   text-align: center;
 }
 
 .button-icon {
    width: 50px;
    height: 50px;
-   margin-bottom: 10px; /* Space between the icon and button */
+   margin-bottom: 10px;
    transition: transform 0.3s ease;
 }
 
 .button-icon:hover {
-   transform: scale(1.2); /* Slightly enlarge on hover */
+   transform: scale(1.2);
 }
 
 .btn {
-   padding: 1em 2em;
+   padding: 0.8em 1.5em; /* Reduced padding for a slimmer button */
    background-color: #C96533;
    color: #fff;
-   font-size: 1.1rem;
+   font-size: 1rem; /* Adjusted font size for balance */
    text-decoration: none;
    border-radius: 25px;
    display: inline-block;
+   width: 160px; /* Fixed width to ensure all buttons are uniform */
+   text-align: center;
    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
