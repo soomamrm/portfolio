@@ -290,6 +290,20 @@
    color: #4a4a4a;
    line-height: 1.6;
 }
+
+/* Skills Section Image and SVG hover effect */
+.skills img,
+.skills svg {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+}
+
+/* Hover effect */
+.skills img:hover,
+.skills svg:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+    opacity: 0.8; /* Slight opacity reduction */
+}
+
 /* Project Section */
 .project-section {
    padding: 4em 2em;
