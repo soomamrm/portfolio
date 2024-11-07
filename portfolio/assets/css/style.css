@@ -367,9 +367,7 @@
    border-radius: 8px;
    margin-bottom: 1em;
    transition: transform 0.3s ease-in-out;
-   background-color: rgb(2, 2, 2); /* Fix image blending with background */
-   padding: 5px; /* Add padding around images to prevent blending */
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow around images */
+   box-shadow: 0 4px 6px rgb(2, 2, 2);; /* Subtle shadow around images */
 }
 
 /* Add hover effect on images */
