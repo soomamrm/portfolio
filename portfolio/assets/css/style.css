@@ -396,7 +396,7 @@
 /* Button styles for carousel */
 .carousel-button {
    position: absolute;
-   top: 50%;
+   top: 33%;
    transform: translateY(-50%); /* Center vertically */
    background-color: rgba(0, 0, 0, 0.2); /* Transparent background */
    color: white;
