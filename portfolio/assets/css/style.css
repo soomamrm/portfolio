@@ -422,16 +422,99 @@
 
 
  /* Contact Section */
- .contact-section {
-    padding: 4em 2em;
-    background-color: #F9DFD6; 
-    text-align: center;
- }
- 
- 
- .contact-section a {
-    color: #C96533; 
- }
+.contact-section {
+   padding: 4em 2em;
+   background-color: #F9DFD6; /* Same as background color used in other sections */
+   text-align: center;
+}
+
+/* Heading in Contact Section */
+.contact-section h2 {
+   color: #C96533; /* Matches your theme color */
+   font-family: 'Cormorant', serif;
+   font-size: 2.5rem;
+   margin-bottom: 1.5em;
+}
+
+/* Contact Form */
+.contact-form {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   max-width: 600px;
+   margin: 0 auto;
+   background-color: #ffffff; /* White background for the form */
+   padding: 2em;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form Fields */
+.contact-form label {
+   font-size: 1rem;
+   font-weight: bold;
+   color: #C96533;
+   text-align: left;
+   margin-bottom: 0.5em;
+}
+
+.contact-form input,
+.contact-form textarea {
+   padding: 1em;
+   font-size: 1rem;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   width: 100%;
+   box-sizing: border-box;
+   background-color: #f9dfd6; /* Matches the background color of the section */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+   outline: none;
+   border-color: #C96533; /* Highlight border on focus */
+}
+
+/* Submit Button */
+.submit-button {
+   padding: 1em;
+   background-color: #C96533; /* Matches your theme color */
+   color: white;
+   border: none;
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+   border-radius: 4px;
+   transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+   background-color: #a5532b; /* Darker shade for hover effect */
+}
+
+.submit-button:active {
+   transform: scale(0.98); /* Slight scale effect on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .contact-form {
+      padding: 1.5em;
+   }
+
+   .contact-form label {
+      font-size: 0.9rem;
+   }
+
+   .contact-form input,
+   .contact-form textarea {
+      font-size: 0.9rem;
+   }
+
+   .submit-button {
+      font-size: 0.9rem;
+   }
+}
  
  
  /* Footer */
