@@ -327,7 +327,7 @@
    align-items: center;
    justify-content: center;
    overflow: hidden;
-   max-width: 80%; /* Adjust width as needed */
+   max-width: 80%;
    margin: 0 auto;
 }
 
@@ -339,16 +339,16 @@
    scroll-behavior: smooth;
    padding: 1em 0;
    width: 100%;
-   -webkit-overflow-scrolling: touch; /* For smoother scrolling on mobile */
+   -webkit-overflow-scrolling: touch;
 }
 
 /* Hide scrollbar */
 .carousel::-webkit-scrollbar {
-   display: none; /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+   display: none;
 }
 
 .carousel {
-   scrollbar-width: none; /* Hide scrollbar in Firefox */
+   scrollbar-width: none;
 }
 
 /* Individual project image and text */
@@ -357,17 +357,44 @@
    max-width: 350px;
    text-align: center;
    margin-bottom: 2em;
+   position: relative;
+   overflow: hidden;
 }
 
+/* Project screenshot with overlay */
 .project-screenshot {
    width: 100%;
    height: auto;
    border-radius: 8px;
-   margin-bottom: 1em;
+   background-color: white;
+   padding: 5px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   position: relative;
    transition: transform 0.3s ease-in-out;
-   background-color: white; /* Fix image blending with background */
-   padding: 10px; /* Add padding around images to prevent blending */
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow around images */
+}
+
+.project-screenshot::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay color */
+   border-radius: 8px;
+   transition: opacity 0.3s ease-in-out;
+   opacity: 1;
+}
+
+/* Remove overlay on hover */
+.project-screenshot:hover::before {
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+}
+
+/* Add zoom effect on hover */
+.project-screenshot:hover {
+   transform: scale(1.05);
 }
 
 /* Project text style */
@@ -376,6 +403,14 @@
    font-weight: bold;
    color: #C96533;
    margin-top: 0.5em;
+   text-decoration: none;
+}
+
+/* Ensure links don’t have underlines */
+.project a {
+   text-decoration: none;
+   color: inherit;
+   display: block;
 }
 
 /* Button styles for carousel */
@@ -405,6 +440,8 @@
 .carousel-button:hover {
    background-color: #a5532b;
 }
+
+
 
  
  /* Contact Section */
