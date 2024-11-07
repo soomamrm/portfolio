@@ -396,7 +396,7 @@
    position: absolute;
    top: 33%;
    transform: translateY(-50%); /* Center vertically */
-   background-color: rgba(0, 0, 0, 0.2); /* Transparent background */
+   background-color: rgba(201, 101, 51, 0.8); /* Transparent background */
    color: white;
    border: none;
    font-size: 1.5rem; /* Smaller font size */
@@ -417,7 +417,7 @@
 
 /* Optional styling for button hover */
 .carousel-button:hover {
-   background-color: rgba(0, 0, 0, 0.4); /* Darker on hover */
+   background-color: rgba(201, 101, 51); /* Darker on hover */
 }
 
 
