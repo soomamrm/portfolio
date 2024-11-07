@@ -327,8 +327,9 @@
    align-items: center;
    justify-content: center;
    overflow: hidden;
-   max-width: 80%; /* Adjust width as needed */
+   max-width: 90%; /* Adjusted width to make carousel larger */
    margin: 0 auto;
+   padding: 0 2em; /* Adjusted padding to create space for buttons */
 }
 
 /* Carousel (scrollable area) */
@@ -353,12 +354,13 @@
 
 /* Individual project image and text */
 .project {
-   min-width: 300px;
-   max-width: 350px;
+   min-width: 350px; /* Increased minimum width */
+   max-width: 400px; /* Increased maximum width */
    text-align: center;
    margin-bottom: 2em;
 }
 
+/* Project image styles */
 .project-screenshot {
    width: 100%;
    height: auto;
@@ -395,35 +397,32 @@
 .carousel-button {
    position: absolute;
    top: 50%;
-   transform: translateY(-50%);
-   background-color: #C96533;
+   transform: translateY(-50%); /* Center vertically */
+   background-color: rgba(0, 0, 0, 0.2); /* Transparent background */
    color: white;
    border: none;
-   font-size: 2rem;
+   font-size: 1.5rem; /* Smaller font size */
    cursor: pointer;
-   padding: 0.5em 0.7em;
+   padding: 0.3em 0.5em; /* Smaller padding */
    border-radius: 50%;
    z-index: 2;
 }
 
+/* Positioning of left and right buttons */
 .left-button {
-   left: -20px;
+   left: 5px; /* Position slightly inside the container */
 }
 
 .right-button {
-   right: -20px;
+   right: 5px; /* Position slightly inside the container */
 }
 
 /* Optional styling for button hover */
 .carousel-button:hover {
-   background-color: #a5532b;
+   background-color: rgba(0, 0, 0, 0.4); /* Darker on hover */
 }
 
 
-
-
-
- 
  /* Contact Section */
  .contact-section {
     padding: 4em 2em;
