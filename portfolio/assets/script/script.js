@@ -60,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const rightButton = document.querySelector('.right-button');
 
     leftButton.addEventListener('click', () => {
-        carousel.scrollBy({ left: -300, behavior: 'smooth' });
+        carousel.scrollBy({ left: -900, behavior: 'smooth' });
     });
     
     rightButton.addEventListener('click', () => {
-        carousel.scrollBy({ left: 300, behavior: 'smooth' });
+        carousel.scrollBy({ left: 900, behavior: 'smooth' });
     });
 });
 
