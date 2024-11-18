@@ -568,6 +568,10 @@
        border: none;
        border-radius: 5px; /* Rounded corners */
    }
+   #fixes{
+      display:flex;
+      justify-content:space-between;
+    } 
 }
 
 /* Hide the toggle button by default on larger screens */
