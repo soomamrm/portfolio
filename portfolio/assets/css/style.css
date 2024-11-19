@@ -5,6 +5,22 @@
     box-sizing: border-box;
  }
  
+ /* Enable smooth scrolling on the whole page */
+html {
+   scroll-behavior: smooth;
+ }
+
+ /* For faster fade-in effect */
+.about-section, .skills-section, .ambitions-section, .project-section, .contact-section {
+   opacity: 0;
+   transform: translateY(30px); /* Start from below */
+   transition: opacity 0.3s ease, transform 0.3s ease; /* Reduced to 0.3s */
+ }
+ 
+ .fade-in {
+   opacity: 1;
+   transform: translateY(0); /* Move to original position */
+ }
  
  body {
     font-family: 'Cormorant garamond', serif;

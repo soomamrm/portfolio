@@ -68,3 +68,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Wait for the DOM to fully load
+document.addEventListener("DOMContentLoaded", () => {
+    // Select all sections that you want to animate
+    const sections = document.querySelectorAll('.about-section, .skills-section, .ambitions-section, .project-section, .contact-section');
+  
+    // Create an IntersectionObserver
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add a class when the section comes into view
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target); // Stop observing after it has appeared
+        }
+      });
+    }, {
+      threshold: 0.25 // Trigger when 25% of the section is visible (so it triggers earlier)
+    });
+  
+    // Observe each section
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
+  
+  
