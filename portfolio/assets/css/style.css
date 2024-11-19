@@ -7,7 +7,7 @@
  
  
  body {
-    font-family: 'Cormorant Infant', serif;
+    font-family: 'Cormorant garamond', serif;
     line-height: 1.6;
     background-color: rgb(249,223,214); /* Background color */
     color: #4a4a4a; /* Body Text */
@@ -238,7 +238,7 @@ footer {
    max-width: 600px;
    margin: 0 auto;
    font-weight: normal;
-   font-family: 'Cormorant Infant', serif;
+   font-family: 'Cormorant', serif;
 }
 
 .buttons {
@@ -270,6 +270,7 @@ footer {
    padding: 0.8em 1.5em; /* Reduced padding for a slimmer button */
    background-color: #C96533;
    color: #fff;
+   font-family: 'Cormorant', serif;
    font-size: 1rem; /* Adjusted font size for balance */
    text-decoration: none;
    border-radius: 25px;
@@ -303,7 +304,8 @@ footer {
     font-size: 2em;
     font-weight: bold; 
     margin-bottom: 1.5em; 
-    color:#C96533
+    color:#C96533;
+    font-family: 'Cormorant', serif;
  }
  
  
@@ -341,6 +343,7 @@ footer {
     font-size: 1.1em;
     color: #4a4a4a; 
     line-height: 1.6;
+    font-family: 'Cormorant', serif;
  }
 
  /* Skills Section */
@@ -354,7 +357,8 @@ footer {
    font-size: 2em;
    font-weight: bold;
    margin-bottom: 1.5em;
-   color:#C96533
+   color:#C96533;
+   font-family: 'Cormorant', serif;
 }
 
 .skills-grid {
@@ -477,6 +481,7 @@ footer {
    color: #C96533;
    margin-top: 0.5em;
    text-decoration: none; /* Remove underline */
+   font-family: 'Cormorant', serif;
 }
 
 /* Ensure links don’t have underlines */
