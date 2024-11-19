@@ -12,7 +12,102 @@
     background-color: rgb(249,223,214); /* Background color */
     color: #4a4a4a; /* Body Text */
  }
- 
+
+ /* Resume Container */
+body {
+   font-family: Arial, sans-serif;
+   background-color: #F9DFD6;
+   margin: 0;
+   padding: 0;
+}
+
+.resume-container {
+   max-width: 800px;
+   margin: 30px auto;
+   background-color: #FFFFFF;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+   text-align: center;
+   color: #C96533;
+}
+
+header .job-title {
+   text-align: center;
+   font-size: 1.2rem;
+   color: #333;
+   font-style: italic;
+}
+
+h2 {
+   color: #C96533;
+   font-size: 1.4rem;
+   margin-bottom: 10px;
+}
+
+ul {
+   list-style-type: none;
+   padding-left: 0;
+}
+
+ul li {
+   margin-bottom: 8px;
+}
+
+a {
+   color: #C96533;
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+   margin-bottom: 20px;
+}
+
+.job ul {
+   margin-left: 20px;
+}
+
+.job h3 {
+   margin: 0;
+   color: #333;
+   font-weight: bold;
+}
+
+.job p {
+   color: #777;
+   font-size: 0.95rem;
+   margin: 5px 0;
+}
+
+.skills ul, .certifications ul {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.skills li, .certifications li {
+   background-color: #C96533;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+
+footer {
+   text-align: center;
+   font-size: 0.9rem;
+   margin-top: 20px;
+   color: #333;
+}
+
+
  
  /* Navbar styling */
  nav {
